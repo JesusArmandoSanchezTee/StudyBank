@@ -54,9 +54,20 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text('Home', style: TextStyle(color: Colors.white),),
+            const Text(
+              'Saldo Actual',
+              style: TextStyle(color: Colors.white, fontSize: 17),
+            ),
+            const SizedBox(width: 20),
+            const Text("13,370.00",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold)),
+            const Padding(padding: EdgeInsets.all(10)),
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, "/mistarjetas");
