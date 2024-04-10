@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                         const SizedBox(height: 20),
                         ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, "/estadoCuenta");
+                            Navigator.pushNamed(context, "/tarjetas");
                           },
                           child: const Text(
                             'Mis Tarjetas',

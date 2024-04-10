@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:studybank/core/pesentation/screens/Transferencia.dart';
 import 'package:studybank/core/pesentation/screens/estadoCuenta.dart';
 import 'package:studybank/core/pesentation/screens/index.dart';
+import 'package:studybank/core/pesentation/screens/tarjetas.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     '/mistarjetas': (context) => const MisTarjetas(),
     '/transferencia': (context) => const Transferencia(),
     '/estadoCuenta': (context) => const EstadoCuenta(),
+    '/tarjetas': (context) => const Tarjetas(),
   };
 
   @override
