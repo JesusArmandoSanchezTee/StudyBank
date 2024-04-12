@@ -15,6 +15,7 @@ class _TransferenciaState extends State<Transferencia> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF27374D),
       appBar: AppBar(
         backgroundColor: const Color(0xFF27374D),
         title: const Text(
@@ -32,7 +33,7 @@ class _TransferenciaState extends State<Transferencia> {
             const Text(
               'ESTAS ENVIANDO A:',
               style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontSize: 20,
                   fontWeight: FontWeight.bold),
             ),
@@ -41,13 +42,25 @@ class _TransferenciaState extends State<Transferencia> {
               leading: CircleAvatar(
                 child: Icon(Icons.person),
               ),
-              title: Text('Juan Diego'),
-              subtitle: Text('HSBC - ****8210\n@JuanDM1'),
+              title: Text('Juan Diego', style: TextStyle(color: Colors.white)),
+              subtitle: Text('HSBC - ****8210\n@JuanDM1',
+                  style: TextStyle(color: Colors.white)),
               trailing: TextButton(
                 onPressed: () {
                   // Acción para cambiar el destinatario
                 },
-                child: Text('Cambiar'),
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors
+                      .white, // Establece el color de fondo del botón a blanco
+                  primary: Colors
+                      .black, // Establece el color del texto y del ícono (si hay) a negro
+                ),
+                child: Text(
+                  'Cambiar',
+                  style: TextStyle(
+                      color: Colors
+                          .black), // Asegura que el color del texto sea negro
+                ),
               ),
             ),
             Padding(
@@ -58,19 +71,30 @@ class _TransferenciaState extends State<Transferencia> {
                     controller: _montoController,
                     decoration: InputDecoration(
                       labelText: 'Cantidad a enviar',
+                      labelStyle: TextStyle(color: Colors.white),
                       border: OutlineInputBorder(),
                     ),
+                    style: TextStyle(
+                        color: Colors
+                            .white),
                     keyboardType: TextInputType.number,
                   ),
                   const SizedBox(height: 10),
-                  Text('Tu saldo disponible: \$288.85'),
+                  Text('Tu saldo disponible: \$288.85',
+                      style: TextStyle(color: Colors.white)),
                   const SizedBox(height: 10),
                   TextField(
                     controller: _referenciaController,
                     decoration: InputDecoration(
                       labelText: 'Números de referencia',
+                      labelStyle: TextStyle(
+                          color: Colors
+                              .white), // Establece el color del labelText a blanco
                       border: OutlineInputBorder(),
                     ),
+                    style: TextStyle(
+                        color: Colors
+                            .white), // Establece el color del texto ingresado a blanco
                     keyboardType: TextInputType.number,
                   ),
                   const SizedBox(height: 10),
@@ -78,20 +102,25 @@ class _TransferenciaState extends State<Transferencia> {
                     controller: _motivoController,
                     decoration: InputDecoration(
                       labelText: 'Motivo',
+                      labelStyle: TextStyle(color: Colors.white),
                       border: OutlineInputBorder(),
                     ),
+                    style: TextStyle(
+                        color: Colors
+                            .white),
                     keyboardType: TextInputType.text,
                     maxLength: 100,
                   ),
                   ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/mistarjetas");
-                },
-                child: const Text('Enviar',
-                    style: TextStyle(color: Colors.black)))
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/mistarjetas");
+                      },
+                      child: const Text('Enviar',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold)))
                 ],
               ),
-              
             ),
             // Agregar botón de enviar u otros widgets aquí si es necesario
           ],

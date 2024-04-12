@@ -123,13 +123,57 @@ class _HomeState extends State<Home> {
                   ),
                   SizedBox(width: 20),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                        Navigator.pushNamed(context, "/retiro");
+                    },
                     child: Row(
                       children: [
                         Icon(Icons.arrow_back,
                             color: Color.fromARGB(255, 255, 255, 255)),
                         SizedBox(width: 10),
                         Text('Retiros', style: TextStyle(color: Colors.white)),
+                      ],
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(30.0),
+                      backgroundColor: Color.fromARGB(255, 52, 52, 52),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/servicios");
+                    },
+                    child: Row(
+                      children: [
+                        Icon(Icons.payment,
+                            color: Color.fromARGB(255, 255, 255, 255)),
+                        SizedBox(width: 10),
+                        Text('Pago de servicios', style: TextStyle(color: Colors.white)),
+                      ],
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(30.0),
+                      backgroundColor: Color.fromARGB(255, 52, 52, 52),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/estadoCuenta");
+                    },
+                    child: Row(
+                      children: [
+                        Icon(Icons.receipt,
+                            color: Color.fromARGB(255, 255, 255, 255)),
+                        SizedBox(width: 10),
+                        Text('Estado Cuenta', style: TextStyle(color: Colors.white)),
                       ],
                     ),
                     style: ElevatedButton.styleFrom(

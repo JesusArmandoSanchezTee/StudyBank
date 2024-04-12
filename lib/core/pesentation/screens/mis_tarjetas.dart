@@ -41,12 +41,19 @@ class _MisTarjetasState extends State<MisTarjetas> {
               decoration: InputDecoration(
                 hintText:
                     'Enviar dinero por un número de tarjeta (16 dígitos) o cuenta CLABE (8 dígitos)',
+                hintStyle: TextStyle(
+                    color: Colors
+                        .white), // Establece el color del texto del hintText a blanco
                 suffixIconColor: Colors.white,
                 border: OutlineInputBorder(),
               ),
+              style: TextStyle(
+                  color: Colors
+                      .white), // Establece el color del texto ingresado a blanco
               keyboardType: TextInputType.number,
             ),
           ),
+
           SizedBox(height: 16),
           ListTile(
             title: Text('Juan Diego Bermudez To...'),
@@ -66,7 +73,63 @@ class _MisTarjetasState extends State<MisTarjetas> {
               ),
             ),
           ),
-          // ... Agregar más widgets para las otras secciones de la pantalla
+          SizedBox(height: 16),
+          ListTile(
+            title: Text('Carlos Hernandez Sa...'),
+            subtitle: Text('4142 4212 5421 6381'),
+            leading: Icon(Icons.credit_card, color: Colors.white),
+            textColor: Colors.white,
+            trailing: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Transferencia()),
+                );
+              },
+              child: Icon(
+                Icons.arrow_forward,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          SizedBox(height: 16),
+          ListTile(
+            title: Text('Brando Lopez Dia...'),
+            subtitle: Text('4142 4212 5421 6381'),
+            leading: Icon(Icons.credit_card, color: Colors.white),
+            textColor: Colors.white,
+            trailing: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Transferencia()),
+                );
+              },
+              child: Icon(
+                Icons.arrow_forward,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          SizedBox(height: 16),
+          ListTile(
+            title: Text('Jesus Armando Te...'),
+            subtitle: Text('4142 4212 5421 6381'),
+            leading: Icon(Icons.credit_card, color: Colors.white),
+            textColor: Colors.white,
+            trailing: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Transferencia()),
+                );
+              },
+              child: Icon(
+                Icons.arrow_forward,
+                color: Colors.white,
+              ),
+            ),
+          ), // ... Agregar más widgets para las otras secciones de la pantalla
         ],
       ),
     );
