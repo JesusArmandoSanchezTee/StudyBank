@@ -52,8 +52,7 @@ class _TransferenciaState extends State<Transferencia> {
                 style: TextButton.styleFrom(
                   backgroundColor: Colors
                       .white, // Establece el color de fondo del botón a blanco
-                  primary: Colors
-                      .black, // Establece el color del texto y del ícono (si hay) a negro
+        // Establece el color del texto y del ícono (si hay) a negro
                 ),
                 child: Text(
                   'Cambiar',

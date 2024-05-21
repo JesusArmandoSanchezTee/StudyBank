@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                 Navigator.pushReplacementNamed(context, "/home");
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors.white, // Background color
+                // Background color
               ),
               child: const Text('Usa tu contraseña',
                       style: TextStyle(

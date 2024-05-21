@@ -1,0 +1,12 @@
+[
+    {
+        "user_id": 1,
+        "nombreUsuario": "usuario123",
+        "contrasenaHash": "5f4dcc3b5aa765d61d8327deb882cf99",
+        "tokenAutenticacion": "abc123xyz456",
+        "telefono": "99873617",
+        "email_user": "correo@gmail.com",
+        "nip": "1432",
+        "usuario_pic": "https//jfnjsa.jpg"
+    }
+]
