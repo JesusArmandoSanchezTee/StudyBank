@@ -1,0 +1,21 @@
+{
+    "nombreTitular": "Juan Pérez",
+    "numeroCuenta": "1234567890",
+    "fechaEstadoCuenta": "2024-05-20",
+    "saldoInicial": 1500.0,
+    "saldoFinal": 1200.0,
+    "transacciones": [
+      {
+        "fecha": "2024-05-15",
+        "descripcion": "Compra en supermercado",
+        "monto": -200.0,
+        "saldo": 1300.0
+      },
+      {
+        "fecha": "2024-05-17",
+        "descripcion": "Depósito",
+        "monto": 200.0,
+        "saldo": 1500.0
+      }
+    ]
+}
