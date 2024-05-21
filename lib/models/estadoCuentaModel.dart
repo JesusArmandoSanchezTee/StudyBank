@@ -1,14 +1,20 @@
-import 'package:studybank/core/domain/tansaccion_Model.dart';
+import 'package:json_annotation/json_annotation.dart';
 
-class EstadoDeCuenta {
+
+
+part 'estadoCuentaModel.g.dart';
+
+@JsonSerializable()
+
+class estadoCuentaModel {
   final String nombreTitular;
   final String numeroCuenta;
   final String fechaEstadoCuenta;
   final double saldoInicial;
   final double saldoFinal;
-  final List<Transaccion> transacciones;
+  final String transacciones;
 
-  EstadoDeCuenta({
+  estadoCuentaModel({
     required this.nombreTitular,
     required this.numeroCuenta,
     required this.fechaEstadoCuenta,
@@ -17,3 +23,4 @@ class EstadoDeCuenta {
     required this.transacciones,
   });
 }
+
