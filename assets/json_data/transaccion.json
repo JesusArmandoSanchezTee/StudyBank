@@ -1,0 +1,27 @@
+[
+    {
+      "fecha": "2024-05-15",
+      "descripcion": "Compra en supermercado",
+      "monto": -200.0,
+      "saldo": 1300.0
+    },
+    {
+      "fecha": "2024-05-17",
+      "descripcion": "Depósito",
+      "monto": 200.0,
+      "saldo": 1500.0
+    },
+    {
+      "fecha": "2024-05-18",
+      "descripcion": "Pago de servicios",
+      "monto": -100.0,
+      "saldo": 1400.0
+    },
+    {
+      "fecha": "2024-05-20",
+      "descripcion": "Retiro en cajero",
+      "monto": -300.0,
+      "saldo": 1100.0
+    }
+  ]
+  
