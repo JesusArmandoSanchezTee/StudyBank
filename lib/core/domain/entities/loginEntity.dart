@@ -1,3 +1,5 @@
+import 'package:json_annotation/json_annotation.dart';
+
 class Login {
   final String usuario;
   final String contrasena;
