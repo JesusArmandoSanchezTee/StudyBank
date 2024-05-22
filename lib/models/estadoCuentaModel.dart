@@ -5,8 +5,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'estadoCuentaModel.g.dart';
 
 @JsonSerializable()
-
-class estadoCuentaModel {
+class EstadoCuentaModel {
   final String nombreTitular;
   final String numeroCuenta;
   final String fechaEstadoCuenta;
@@ -14,7 +13,7 @@ class estadoCuentaModel {
   final double saldoFinal;
   final String transacciones;
 
-  estadoCuentaModel({
+  EstadoCuentaModel({
     required this.nombreTitular,
     required this.numeroCuenta,
     required this.fechaEstadoCuenta,
@@ -22,5 +21,7 @@ class estadoCuentaModel {
     required this.saldoFinal,
     required this.transacciones,
   });
+factory EstadoCuentaModel.fromJson(Map<String, dynamic> json) => _$EstadoCuentaModelFromJson(json);
+Map<String, dynamic> toJson() => _$EstadoCuentaModelToJson(this);
 }
 

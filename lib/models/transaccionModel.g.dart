@@ -6,15 +6,15 @@ part of 'transaccionModel.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-transaccionModel _$transaccionModelFromJson(Map<String, dynamic> json) =>
-    transaccionModel(
+TransaccionModel _$TransaccionModelFromJson(Map<String, dynamic> json) =>
+    TransaccionModel(
       fecha: json['fecha'] as String,
       descripcion: json['descripcion'] as String,
       monto: (json['monto'] as num).toDouble(),
       saldo: (json['saldo'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$transaccionModelToJson(transaccionModel instance) =>
+Map<String, dynamic> _$TransaccionModelToJson(TransaccionModel instance) =>
     <String, dynamic>{
       'fecha': instance.fecha,
       'descripcion': instance.descripcion,

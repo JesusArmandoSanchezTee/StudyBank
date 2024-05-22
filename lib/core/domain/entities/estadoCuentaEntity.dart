@@ -9,7 +9,7 @@ class EstadoDeCuenta {
   final String fechaEstadoCuenta;
   final double saldoInicial;
   final double saldoFinal;
-  final List<Transaccion> transacciones;
+  final String transacciones;
 
   EstadoDeCuenta({
     required this.nombreTitular,

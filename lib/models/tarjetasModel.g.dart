@@ -6,8 +6,8 @@ part of 'tarjetasModel.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-tarjetasModel _$tarjetasModelFromJson(Map<String, dynamic> json) =>
-    tarjetasModel(
+TarjetasModel _$TarjetasModelFromJson(Map<String, dynamic> json) =>
+    TarjetasModel(
       numeroTarjeta: json['numeroTarjeta'] as String,
       nombreTitular: json['nombreTitular'] as String,
       fechaExpiracion: json['fechaExpiracion'] as String,
@@ -15,7 +15,7 @@ tarjetasModel _$tarjetasModelFromJson(Map<String, dynamic> json) =>
       saldoDisponible: (json['saldoDisponible'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$tarjetasModelToJson(tarjetasModel instance) =>
+Map<String, dynamic> _$TarjetasModelToJson(TarjetasModel instance) =>
     <String, dynamic>{
       'numeroTarjeta': instance.numeroTarjeta,
       'nombreTitular': instance.nombreTitular,
