@@ -1,11 +1,16 @@
-class TarjetaBancaria {
+import 'package:json_annotation/json_annotation.dart';
+
+part 'tarjetasModel.g.dart';
+
+@JsonSerializable()
+class TarjetasModel {
   final String numeroTarjeta;
   final String nombreTitular;
   final String fechaExpiracion;
   final String tipoTarjeta; // Ej: "Crédito", "Débito"
   final double saldoDisponible;
 
-  TarjetaBancaria({
+  TarjetasModel({
     required this.numeroTarjeta,
     required this.nombreTitular,
     required this.fechaExpiracion,

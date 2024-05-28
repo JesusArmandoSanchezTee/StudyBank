@@ -1,12 +1,15 @@
 import 'package:studybank/core/domain/tansaccion_Model.dart';
 
+
+
+
 class EstadoDeCuenta {
   final String nombreTitular;
   final String numeroCuenta;
   final String fechaEstadoCuenta;
   final double saldoInicial;
   final double saldoFinal;
-  final List<Transaccion> transacciones;
+  final String transacciones;
 
   EstadoDeCuenta({
     required this.nombreTitular,
@@ -17,3 +20,4 @@ class EstadoDeCuenta {
     required this.transacciones,
   });
 }
+
