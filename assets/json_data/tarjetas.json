@@ -1,0 +1,8 @@
+{
+    "tarjetaID": "001",
+    "numeroTarjeta": "1234 5678 9012 3456",
+    "nombreTitular": "Juan Pérez",
+    "fechaExpiracion": "12/25",
+    "codigoSeguridad": "123",
+    "tipoTarjeta": "Visa"
+}
