@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'transferenciaModel.g.dart';
 
 @JsonSerializable()
-class transferenciaModel {
+class TransferenciaModel {
   String contacto_pic;
   double balance_general;
   String titulo_mavimiento;
@@ -11,7 +11,7 @@ class transferenciaModel {
   DateTime fecha_movimiento;
   double descuento;
 
-  transferenciaModel(
+  TransferenciaModel(
       {required this.contacto_pic,
       required this.balance_general,
       required this.titulo_mavimiento,

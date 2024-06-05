@@ -6,8 +6,8 @@ part of 'estadoCuentaModel.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-estadoCuentaModel _$estadoCuentaModelFromJson(Map<String, dynamic> json) =>
-    estadoCuentaModel(
+EstadoCuentaModel _$EstadoCuentaModelFromJson(Map<String, dynamic> json) =>
+    EstadoCuentaModel(
       nombreTitular: json['nombreTitular'] as String,
       numeroCuenta: json['numeroCuenta'] as String,
       fechaEstadoCuenta: json['fechaEstadoCuenta'] as String,
@@ -16,7 +16,7 @@ estadoCuentaModel _$estadoCuentaModelFromJson(Map<String, dynamic> json) =>
       transacciones: json['transacciones'] as String,
     );
 
-Map<String, dynamic> _$estadoCuentaModelToJson(estadoCuentaModel instance) =>
+Map<String, dynamic> _$EstadoCuentaModelToJson(EstadoCuentaModel instance) =>
     <String, dynamic>{
       'nombreTitular': instance.nombreTitular,
       'numeroCuenta': instance.numeroCuenta,

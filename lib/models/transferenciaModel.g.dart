@@ -6,8 +6,8 @@ part of 'transferenciaModel.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-transferenciaModel _$transferenciaModelFromJson(Map<String, dynamic> json) =>
-    transferenciaModel(
+TransferenciaModel _$TransferenciaModelFromJson(Map<String, dynamic> json) =>
+    TransferenciaModel(
       contacto_pic: json['contacto_pic'] as String,
       balance_general: (json['balance_general'] as num).toDouble(),
       titulo_mavimiento: json['titulo_mavimiento'] as String,
@@ -16,7 +16,7 @@ transferenciaModel _$transferenciaModelFromJson(Map<String, dynamic> json) =>
       descuento: (json['descuento'] as num).toDouble(),
     );
 
-Map<String, dynamic> _$transferenciaModelToJson(transferenciaModel instance) =>
+Map<String, dynamic> _$TransferenciaModelToJson(TransferenciaModel instance) =>
     <String, dynamic>{
       'contacto_pic': instance.contacto_pic,
       'balance_general': instance.balance_general,
